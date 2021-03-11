@@ -391,7 +391,6 @@ endfunction
 
 
 function! s:AllowedToCompleteInBuffer( buffer )
-  return 1
   let buffer_filetype = getbufvar( a:buffer, '&filetype' )
 
   if empty( buffer_filetype ) ||
